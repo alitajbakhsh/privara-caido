@@ -1,0 +1,7 @@
+{
+  "name": "privara-caido-frontend",
+  "version": "2026.11.13",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,7 @@
+node_modules/
+packages/*/dist/
+dist/plugin_package/
+# the built package is served by the platform (GET /dashboard/downloads/privara-caido.zip), so it is committed
+!dist/plugin_package.zip
+# a signature is a release asset (ops/caido-plugin/sign), never committed
+dist/*.sig

@@ -1,0 +1,21 @@
+{
+  "name": "privara-caido",
+  "version": "2026.11.13",
+  "private": true,
+  "type": "module",
+  "description": "Privara iOS kit for Caido: Privara iOS Analysis inside Caido",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node --test test/core.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "caido-dev build"
+  },
+  "devDependencies": {
+    "@caido-community/dev": "0.1.7",
+    "@caido/sdk-backend": "0.58.3",
+    "@caido/sdk-frontend": "0.58.3",
+    "fflate": "0.8.2",
+    "typescript": "5.9.3"
+  },
+  "//": "fflate is a devDependency on purpose: tsup bundles devDependencies into backend/index.js, and Caido's runtime has no node_modules."
+}
